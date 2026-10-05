@@ -3,6 +3,8 @@ TH09 C++ / SDL3 browser reconstruction
 Original game, characters, graphics, dialogue, music and effects: Team Shanghai Alice / ZUN.
 Game data and MS Gothic font are separate original/proprietary assets; the source code does not grant a license to those assets.
 
+Game code: YomotsuHisami/th09, MIT (author-confirmed; see ../LICENSE-YomotsuHisami.txt).
+
 Runtime components (license copies in licenses/):
 - SDL 3.4.2 and SDL_ttf 3.2.2: zlib license.
 - FreeType 2.14.3: FreeType License. Portions copyright The FreeType Project.
