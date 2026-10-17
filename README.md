@@ -136,7 +136,7 @@ The game logic is the architecture-independent C++ from upstream (`game/`), comp
 | `scripts/gen_cp932.py` | CP932 → Unicode table for text |
 | `tests/test_host.cpp` | host tests for the port layer |
 
-The game ticks once per vsync (60 Hz); after a real stall it catches up by at most four ticks, like upstream's frame cadence. Replay fast-forward keeps upstream's behaviour. The CPU is set to the same 1785 MHz boost the other native ports use.
+The game ticks once per vsync (60 Hz); after a real stall it catches up by at most four ticks, like upstream's frame cadence. Replay fast-forward keeps upstream's behaviour. It runs at the Switch's stock clocks; raise them with a tool such as sys-clk if you want more headroom.
 
 Upstream still labels its TH09 reconstruction as under validation (see its README for what has been compared frame-by-frame against the original); this port inherits exactly that game logic.
 

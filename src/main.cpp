@@ -284,8 +284,6 @@ int main(int argc,char** argv){
     using namespace th09::sdl;using th09::u16;using th09::u32;
     th09::host::locate_data(argc,argv);
 #ifdef __SWITCH__
-    // Same CPU boost the other native ports use; the GPU stays with the applet.
-    if(R_SUCCEEDED(clkrstInitialize())){ClkrstSession cpu;if(R_SUCCEEDED(clkrstOpenSession(&cpu,PcvModuleId_CpuBus,3))){clkrstSetClockRate(&cpu,1785000000);clkrstCloseSession(&cpu);}clkrstExit();}
     appletSetFocusHandlingMode(AppletFocusHandlingMode_SuspendHomeSleep);
 #endif
     initialize_pads();
